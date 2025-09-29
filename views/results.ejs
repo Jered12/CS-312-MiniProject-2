@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <!-- Main heading  -->
+    <head>
+        <title>Crypto Price Result</title>
+        <!-- link to css file-->
+        <link rel="stylesheet" href="/styles.css">
+    </head>
+
+    <body>
+        <!-- header in the result page -->
+        <h1>Result</h1>
+
+        <!-- if there is an error print the error msg -->
+        <% if (error !== null) 
+        { %>
+            <p class="error"><%= error %></p>
+        <% } 
+        <!-- else print the coin-->
+        else 
+        { %>
+            <p>1 <%= coin %> = $<%= price %> USD</p>
+
+             <!-- show logo if it exists -->
+            <% if (logo !== null) 
+            { %>
+                <img src="<%= logo %>" alt="<%= coin %> logo" class="coin-logo">
+            <% } %>
+
+        <% } %>
+
+        <!-- a link back to the homepage -->
+        <a href="/">Check another coin</a>
+    </body>
+</html>

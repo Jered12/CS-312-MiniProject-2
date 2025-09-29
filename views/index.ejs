@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Title and link the styles sheet -->
+    <title>Check Crypto Price</title>
+    <link rel="stylesheet" href="/styles.css">
+  </head> 
+
+  <body>
+    <!-- Title -->
+    <h1>Check Crypto Price</h1>
+
+    <!-- for so user can type a cryptocurrecny name-->
+    <form action="/results" method="POST">
+      <!-- seach bar-->
+      <input type="text" name="coin" placeholder="Enter crypto (ex: btc-bitcoin)">
+      <!-- submit button -->
+      <button type="submit">Get Price</button>
+    </form>
+
+    <!-- also created a cyrpto list because they need the symbol -->
+    <!-- and name and people might not know that -->
+    <div class="crypto-list">
+      <h3>Top searched crypto:</h3>
+      <ul>
+        <li>btc-bitcoin</li>
+        <li>eth-ethereum</li>
+        <li>usdt-tether</li>
+        <li>bnb-binance-coin</li>
+        <li>xrp-xrp</li>
+        <li>doge-dogecoin</li>
+        <li>sol-solana</li>
+        <li>shib-shiba-inu</li>
+        <li>ltc-litecoin</li>
+        <li>link-chainlink</li>
+      </ul>
+    </div>
+
+  </body>
+
+</html>
